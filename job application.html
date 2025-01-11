@@ -1,12 +1,59 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Level 4</title>
+    <title>Job Application Portal</title>
     <link rel="stylesheet" href="job application.css">
 </head>
 <body>
-    <div>This is a box</div>
+    <div class="container">
+        <div class="apply_box">
+            <h1><strong>Job Application Portal</strong></h1>
+            <form action="">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" name="first_name" type="text" placeholder="John">
+                    </div>
+                    <div class="form_control">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" name="last_name" type="text" placeholder="Doe">
+                    </div>
+                    <div class="form_control">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder="johndoe@gmail.com">
+                    </div>
+                    <div class="form_control">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" placeholder="123-456-7890">
+                    </div>
+                    <div class="form_control">
+                        <label for="job_role">Job Role</label>
+                        <select id="job_role" name="job_role">
+                            <option value="">Select a role</option>
+                            <option value="frontend">Front-End Developer</option>
+                            <option value="backend">Back-End Developer</option>
+                            <option value="fullstack">Full Stack Developer</option>
+                            <option value="ml">Machine Learning Engineer</option>
+                            <option value="ds">Data Scientist</option>
+                            <option value="appdev">Android App Developer</option>
+                        </select>
+                    </div>
+                    <div class="form_control">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" placeholder="Kashmere Gate, Delhi"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <label for="resume">Upload Resume</label>
+                        <input id="resume" name="resume" type="file">
+                    </div>
+                    <div class="btn_container">
+                        <button type="submit" class="btn">Submit Application</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
